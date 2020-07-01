@@ -12,6 +12,31 @@
 </head>
 
 <body>
+
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About Me</a></li>
+        <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>My skills</a>
+        </li>
+        <li class="navigation__item"><a href="#section-projects" class="navigation__link"><span>03</span>My projects</a>
+        </li>
+        <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>04</span>Contact me</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
   <header class="header">
     <div class="header__logo-box">
       Logo
@@ -27,10 +52,10 @@
   </header>
 
   <main>
-    <section class="section-about">
+    <section class="section-about" id="section-about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
-          Welcome to my portfolio website
+          About me
         </h2>
       </div>
 
@@ -64,7 +89,7 @@
       </div>
     </section>
 
-    <section class="section-features">
+    <section class="section-features" id="section-features">
       <div class="row">
         <div class="feature-box">
           <i class="feature-box__icon icon-basic-compass"></i>
@@ -222,7 +247,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact" id="section-contact">
       <div class="row">
         <div class="contact">
           <div class="contact__form">
