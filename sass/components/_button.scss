@@ -2,6 +2,8 @@
 
   /* pseudo class */
   /* special state of element*/
+  &,
+  // <button> doesnot have link or visited like a
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -13,6 +15,10 @@
     /* initialstate */
     position: relative;
     font-size: $default-font-size;
+
+    // Change the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -26,7 +32,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }

@@ -221,7 +221,60 @@
         <a href="https://github.com/Laphatradap" class="btn btn--green">Check my GitHub Profile</a>
       </div>
     </section>
+
+    <section class="section-contact">
+      <div class="row">
+        <div class="contact">
+          <div class="contact__form">
+            <form action="POST" data-netlify="true" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Contact
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Enter your full name" id="name" required>
+                <label for="name" class="form__label">Full name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Enter your email address" id="email" required>
+                <label for="email" class="form__label">Email address</label>
+              </div>
+
+              <div class="form__group">
+                <textarea class="form__input" name="message" id="message" placeholder="Your message"></textarea>
+                <label message="message" class="form__label">Message</label>
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn--green" type="submit" value="SEND">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="footer__container">
+        <div class="footer__item">
+          <span class="heading-tertiary">Location: </span> Amsterdam, the Netherlands
+        </div>
+        <div class="footer__item">
+          <span class="heading-tertiary">Phone: </span> +31 (0) 64 432 5254
+        </div>
+        <div class="footer__item">
+          <span class="heading-tertiary">Email: </span>
+          <a class="footer__link" href="mailto:laphatradap@disroot.org">laphatradap@disroot.org</a> </div>
+        <p class="footer__item">
+          The design is adapted from Jonas Schmedtmann's online course Advanced CSS and Sass.
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
