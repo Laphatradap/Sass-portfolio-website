@@ -1,7 +1,6 @@
 .row {
   max-width: $grid-width; // if space is less than max-width, fill it 100%
   margin: 0 auto;
-  background: gray;
 
   &:not(:last-child) {
     /*select everything except last child*/
@@ -12,8 +11,6 @@
 
   [class^="col-"] {
     float: left;
-    background-color: red;
-
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
@@ -23,26 +20,32 @@
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
+    // background: blue;
 
   }
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    // background: green;
   }
 
   .col-2-of-3 {
     width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    // background: salmon;
   }
 
   .col-1-of-4 {
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    // background: red;
   }
 
   .col-2-of-4 {
     width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    // background: black;
   }
 
   .col-3-of-4 {
     width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+    // background: pink;
   }
 }

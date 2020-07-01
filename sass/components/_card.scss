@@ -1,0 +1,103 @@
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 45rem;
+
+  &__side {
+    height: 45rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; //hide content from the other side
+    border-radius: 3px;
+    overflow: hidden; // hide part of image that bigger than card
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom,
+          $color-primary-light,
+          $color-primary-dark);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg); //move the card to another direction with -180deg
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    background-position: top center;
+    height: 23rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: url(../../img/projects/MeetMoreApp.jpg);
+    }
+
+    &--2 {
+      background-image: url(../../img/projects/TvShowLand.png);
+    }
+
+    &--3 {
+      background-image: url(../../img/projects/WhiskeyWebshop.png);
+    }
+  }
+
+  &__heading {
+    margin-top: 1.5rem;
+    color: $color-primary;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__details {
+    padding: 1rem 2.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__cta {
+    //make element centered
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__text-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 2rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: $default-font-size;
+        padding: 1rem;
+      }
+    }
+  }
+}
