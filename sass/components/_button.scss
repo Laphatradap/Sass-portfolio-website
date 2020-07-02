@@ -1,9 +1,6 @@
 .btn {
 
-  /* pseudo class */
-  /* special state of element*/
   &,
-  // <button> doesnot have link or visited like a
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -15,7 +12,6 @@
     /* initialstate */
     position: relative;
     font-size: $default-font-size;
-
     // Change the <button> element
     border: none;
     cursor: pointer;
@@ -41,7 +37,7 @@
 
   &--white {
     background-color: $color-white;
-    color: $color-grey-dark;
+    color: $color-grey-dark-1;
     margin: .6rem;
 
     &::after {
@@ -49,7 +45,7 @@
     }
   }
 
-  &--green {
+  &--colored {
     background-color: $color-primary;
     color: $color-white;
 

@@ -20,7 +20,6 @@
       <span class="navigation__icon">&nbsp;</span>
     </label>
 
-    <!-- <div class="navigation__container"> -->
     <div class="navigation__background">&nbsp;</div>
     <nav class="navigation__nav" id="navigation__nav">
       <ul id="menu" class="navigation__list">
@@ -35,15 +34,10 @@
         </li>
       </ul>
     </nav>
-    <!-- </div> -->
   </div>
 
 
   <header class="header">
-    <div class="header__logo-box">
-      Logo
-    </div>
-
     <div class="header__text-box">
       <h1 class="heading-primary">
         <span class="heading-primary--main">Laphatrada Phusri</span>
@@ -83,9 +77,23 @@
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <img src="img/feature_pic1.jpg" alt="Profile Photo" class="composition__photo composition__photo--p1" />
-            <img src="img/feature_pic2.jpg" alt="Profile Photo" class="composition__photo composition__photo--p2" />
-            <img src="img/feature_pic2.jpg" alt="Profile Photo" class="composition__photo composition__photo--p3" />
+            <img srcset="img/feature_pic1.jpg 300w, img/feature_pic1.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Photo 1"
+            class="composition__photo composition__photo--p1"
+            src="img/feature_pic1.jpg">
+
+             <img srcset="img/feature_pic3_small.jpg 300w, img/feature_pic3.jpg 700w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Photo 2"
+            class="composition__photo composition__photo--p2"
+            src="img/feature_pic3.jpg">
+
+            <img srcset="img/feature_pic2_small.jpg 300w, img/feature_pic2.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Photo 3"
+            class="composition__photo composition__photo--p3"
+            src="img/feature_pic2.jpg">
           </div>
         </div>
       </div>
@@ -141,7 +149,7 @@
     <section class="section-projects" id="section-projects">
       <div class="u-center-text u-margin-bottom-medium">
         <h2 class="heading-secondary">
-          My Projects
+          My projects
         </h2>
       </div>
 
@@ -245,7 +253,7 @@
         </div>
       </div>
       <div class="u-center-text u-margin-top-small">
-        <a href="https://github.com/Laphatradap" class="btn btn--green">Check my GitHub Profile</a>
+        <a href="https://github.com/Laphatradap" class="btn btn--colored">Check my GitHub Profile</a>
       </div>
     </section>
 
@@ -256,7 +264,7 @@
             <form action="POST" data-netlify="true" class="form">
               <div class="u-margin-bottom-medium">
                 <h2 class="heading-secondary">
-                  Contact
+                  Leave me a message!
                 </h2>
               </div>
 
@@ -276,7 +284,7 @@
               </div>
 
               <div class="form__group">
-                <button class="btn btn--green" type="submit" value="SEND">Submit</button>
+                <button class="btn btn--colored" type="submit" value="SEND">Submit</button>
             </form>
           </div>
         </div>

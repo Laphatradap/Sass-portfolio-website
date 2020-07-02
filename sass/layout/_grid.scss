@@ -2,9 +2,17 @@
   max-width: $grid-width; // if space is less than max-width, fill it 100%
   margin: 0 auto;
 
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
+
   &:not(:last-child) {
     /*select everything except last child*/
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   @include clearfix;
@@ -14,6 +22,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
 
   }
