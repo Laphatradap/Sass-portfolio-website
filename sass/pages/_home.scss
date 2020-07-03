@@ -4,21 +4,21 @@
   margin-top: -15vh;
 
   @include respond(big-desktop) {
-    padding: 35rem 0 39rem 0;
+    padding: 35rem 2rem 39rem 2rem;
   }
 
   @include respond(tab-land) {
     margin-top: -10vh;
-    padding: 30rem 5rem;
+    padding: 30rem 2rem;
   }
 
   @include respond(tab-port) {
     margin-top: -10vh;
   }
 
-  @include respond(phone) {
-    margin-top: -10vh;
-  }
+  // @include respond(phone) {
+  //   margin-top: -10vh;
+  // }
 }
 
 .section-features {

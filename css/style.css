@@ -373,7 +373,7 @@ body {
           left: 0;
           transform: scale(1.1); } }
     .composition__photo:hover {
-      outline: 1rem solid #66ccff;
+      outline: 1rem solid #3d7a99;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20;
@@ -682,15 +682,12 @@ body {
   margin-top: -15vh; }
   @media only screen and (min-width: 112.5em) {
     .section-about {
-      padding: 35rem 0 39rem 0; } }
+      padding: 35rem 2rem 39rem 2rem; } }
   @media only screen and (max-width: 75em) {
     .section-about {
       margin-top: -10vh;
-      padding: 30rem 5rem; } }
+      padding: 30rem 2rem; } }
   @media only screen and (max-width: 56.25em) {
-    .section-about {
-      margin-top: -10vh; } }
-  @media only screen and (max-width: 37.5em) {
     .section-about {
       margin-top: -10vh; } }
 
