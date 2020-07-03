@@ -519,8 +519,6 @@ body {
     align-items: center; }
     .footer__icon--item {
       padding: 1.5rem; }
-      .footer__icon--item a:visited {
-        color: inherit; }
   .footer__container {
     display: flex;
     flex-flow: row wrap;
@@ -544,6 +542,9 @@ body {
     text-decoration: none; }
   .footer__link:hover, .footer__link:active {
     color: #f7f7f7; }
+  .footer a:visited {
+    color: inherit;
+    text-decoration: none; }
 
 .navigation__checkbox {
   display: none; }
