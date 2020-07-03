@@ -1,26 +1,38 @@
 .footer {
-  background-color: $color-grey-dark-3;
+  background-color: $color-black;
   padding: 10rem 0;
   color: $color-grey-light-1;
 
-  &__container {
+  &__icon {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    // margin: 2rem;
+
+    &--item {
+      padding: 1.5rem;
+
+      a:visited {
+        color: inherit;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   &__item {
-    // background: red;
     font-size: 2rem;
-    padding: 3rem;
+    padding: 1.2rem;
     text-align: center;
 
     @include respond(tab-port) {
       padding: 1rem;
     }
-
 
     &:last-child {
       font-size: $default-font-size;

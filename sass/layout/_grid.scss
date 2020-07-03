@@ -2,6 +2,10 @@
   max-width: $grid-width; // if space is less than max-width, fill it 100%
   margin: 0 auto;
 
+  @include respond(phone) {
+    padding: 3rem;
+  }
+
   @include respond(tab-port) {
     max-width: 50rem;
   }
