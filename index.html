@@ -21,9 +21,13 @@
     </label>
 
     <div class="navigation__background">&nbsp;</div>
+
     <nav class="navigation__nav" id="navigation__nav">
       <ul id="menu" class="navigation__list">
-        <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About Me</a>
+        <li class="navigation__item">
+          <a href="#section-about" class="navigation__link">
+            <span>01</span>
+            About Me</a>
         </li>
         <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>My skills</a>
         </li>
@@ -43,7 +47,7 @@
         <span class="heading-primary--main">Laphatrada Phusri</span>
         <span class="heading-primary--sub">Full Stack Web Developer</span>
       </h1>
-      <a href="#section-projects" class="btn btn--white btn--animated">Check My Projects</a>
+      <a href="#section-projects" class="btn btn--colored btn--animated">Check My Projects</a>
     </div>
   </header>
 
@@ -61,7 +65,7 @@
             Hi, I am Laphat!
           </h3>
           <p class="paragraph">
-            I am full-stack web developer with a passion for developing software that make people's lives
+            I am full-stack web developer with a passion for developing web & mobile applications that make people's lives
             simpler. So far I have Javascript, HTML, CSS, Sass, React, Redux, Express, Postgres, Sequelize and
             Git/Github under my belt. I've started learning Vue, Typescript and GraphQL.
           </p>
@@ -174,8 +178,10 @@
                     <li>Material UI</li>
                   </ul>
                 </div>
-                <a href="https://meetmore.netlify.app/" class="btn btn--white">Demo</a>
-                <a href="https://github.com/Laphatradap/MeetMore-client" class="btn btn--white">Code</a>
+                <div>
+                  <a href="https://meetmore.netlify.app/" class="btn btn--white">Demo</a>
+                  <a href="https://github.com/Laphatradap/MeetMore-client" class="btn btn--white">Code</a>
+                </div>
               </div>
             </div>
           </div>
@@ -206,8 +212,10 @@
                     <li>Jest</li>
                   </ul>
                 </div>
-                <a href="https://tvshow-search.netlify.app/" class="btn btn--white">Demo</a>
-                <a href="https://github.com/Laphatradap/tvshow-search-app" class="btn btn--white">Code</a>
+                <div>
+                  <a href="https://tvshow-search.netlify.app/" class="btn btn--white">Demo</a>
+                  <a href="https://github.com/Laphatradap/tvshow-search-app" class="btn btn--white">Code</a>
+                </div>
               </div>
             </div>
           </div>
@@ -239,8 +247,10 @@
                     <li>Stripe Payment</li>
                   </ul>
                 </div>
-                <a href="https://whiskies-webshop-client.herokuapp.com/" class="btn btn--white">Demo</a>
-                <a href="https://github.com/Laphatradap/whiskies-webshop-app" class="btn btn--white">Code</a>
+                <div>
+                  <a href="https://whiskies-webshop-client.herokuapp.com/" class="btn btn--white">Demo</a>
+                  <a href="https://github.com/Laphatradap/whiskies-webshop-app" class="btn btn--white">Code</a>
+                </div>
               </div>
             </div>
           </div>
@@ -312,18 +322,28 @@
         </div>
         <div class="footer__item">
           <span class="heading-tertiary">Email: </span>
-          <a class="footer__link" href="mailto:laphatradap@disroot.org">laphatradap@disroot.org</a> 
+          <a class="footer__link" href="mailto:laphatradap@disroot.org">laphatradap@disroot.org</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script>
-    let checkbox = document.getElementById("navi-toggle");
-    let navMenu = document.getElementById("navigation__nav");
-    navMenu.addEventListener("click", function () {
-      checkbox.checked = false;
-    });
+    // let checkbox = document.getElementById("navi-toggle");
+    // let navMenu = document.getElementById("navigation__nav");
+    // navMenu.addEventListener("click", function () {
+    //   checkbox.checked = false;
+    // });
+    var menu = document.getElementById('menu');
+    var closeIcon = document.getElementById('navi-toggle');
+
+    menu.addEventListener('click', handleMenuClick);
+
+    function handleMenuClick(event) {
+      if (event.target instanceof HTMLAnchorElement) {
+        closeIcon.checked = false;
+      }
+    }
   </script>
 </body>
 

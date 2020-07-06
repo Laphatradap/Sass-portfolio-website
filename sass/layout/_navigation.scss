@@ -75,11 +75,13 @@
 
   &__link {
 
+    // visibility: hidden;
+
     &:link,
     &:visited {
       display: inline-block;
       font-size: 3rem;
-      font-weight: 300;
+      font-weight: 400;
       padding: 1rem 2rem;
       color: $color-white;
       text-decoration: none;
@@ -105,6 +107,10 @@
     }
   }
 
+  &__checkbox:not(:checked)~&__link {
+    visibility: hidden;
+  }
+
   //FUNCTIONALITY
   &__checkbox:checked~&__background {
     transform: scale(80);
@@ -115,6 +121,8 @@
   }
 
   &__checkbox:checked~&__nav {
+    // transform: translateX(0);
+    // visibility: initial;
     opacity: 1;
     width: 100%;
   }

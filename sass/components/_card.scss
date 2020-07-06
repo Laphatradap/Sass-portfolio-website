@@ -18,7 +18,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
-      background-color: $color-white;
+      background-color: rgba($color-grey-dark-3, .8);
     }
 
     &--back {
@@ -104,7 +104,7 @@
   @include respond(tab-port) {
     height: auto;
     border-radius: 3px;
-    background-color: $color-white;
+    background-color: $color-black-light-2;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &__side {

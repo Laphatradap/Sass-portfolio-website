@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-black;
+  background-color: $color-black-light-1;
   padding: 10rem 0;
   color: $color-grey-light-1;
 
@@ -45,7 +45,7 @@
 
     &:link,
     &:visited {
-      color: inherit;
+      color: $color-white;
       text-decoration: none;
     }
 
