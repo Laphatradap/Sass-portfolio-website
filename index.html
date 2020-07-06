@@ -65,7 +65,8 @@
             Hi, I am Laphat!
           </h3>
           <p class="paragraph">
-            I am full-stack web developer with a passion for developing web & mobile applications that make people's lives
+            I am full-stack web developer with a passion for developing web & mobile applications that make people's
+            lives
             simpler. So far I have Javascript, HTML, CSS, Sass, React, Redux, Express, Postgres, Sequelize and
             Git/Github under my belt. I've started learning Vue, Typescript and GraphQL.
           </p>
@@ -329,21 +330,11 @@
   </footer>
 
   <script>
-    // let checkbox = document.getElementById("navi-toggle");
-    // let navMenu = document.getElementById("navigation__nav");
-    // navMenu.addEventListener("click", function () {
-    //   checkbox.checked = false;
-    // });
-    var menu = document.getElementById('menu');
-    var closeIcon = document.getElementById('navi-toggle');
-
-    menu.addEventListener('click', handleMenuClick);
-
-    function handleMenuClick(event) {
-      if (event.target instanceof HTMLAnchorElement) {
-        closeIcon.checked = false;
-      }
-    }
+    let checkbox = document.getElementById("navi-toggle");
+    let navMenu = document.getElementById("navigation__nav");
+    navMenu.addEventListener("click", function () {
+      checkbox.checked = false;
+    });
   </script>
 </body>
 

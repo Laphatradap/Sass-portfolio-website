@@ -52,6 +52,7 @@
   }
 
   &__nav {
+    visibility: hidden;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -75,8 +76,6 @@
 
   &__link {
 
-    // visibility: hidden;
-
     &:link,
     &:visited {
       display: inline-block;
@@ -91,7 +90,7 @@
           transparent 50%,
           $color-white 50%);
       background-size: 220%;
-      transition: all 0.4s;
+      transition: all .4s;
 
       span {
         margin-right: 1.5rem;
@@ -107,10 +106,6 @@
     }
   }
 
-  &__checkbox:not(:checked)~&__link {
-    visibility: hidden;
-  }
-
   //FUNCTIONALITY
   &__checkbox:checked~&__background {
     transform: scale(80);
@@ -121,10 +116,9 @@
   }
 
   &__checkbox:checked~&__nav {
-    // transform: translateX(0);
-    // visibility: initial;
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
 
   //ICON
