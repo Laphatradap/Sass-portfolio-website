@@ -542,6 +542,7 @@ body {
       text-decoration: none; }
     .footer__link:hover, .footer__link:active {
       color: inherit; }
+    .footer__link a:link,
     .footer__link a:visited > .fa {
       color: #fff; }
 
