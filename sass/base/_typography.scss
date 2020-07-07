@@ -10,6 +10,15 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 3rem;
+  margin-top: 1rem;
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 20rem;
+  }
 
   &--main {
     display: block;

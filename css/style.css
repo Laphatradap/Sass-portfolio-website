@@ -75,7 +75,14 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-top: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary {
+      margin-top: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      margin-top: 20rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
@@ -679,7 +686,7 @@ body {
 .section-contact {
   padding: 10rem;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/laptop-desk.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: top; }
   @media only screen and (max-width: 37.5em) {
     .section-contact {
@@ -691,3 +698,6 @@ body {
   .contact__form {
     width: 100%;
     padding: 8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__form {
+        padding: 5rem 2rem; } }

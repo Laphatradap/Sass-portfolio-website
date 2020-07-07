@@ -32,7 +32,7 @@
       rgba($color-black, 0.7),
       rgba($color-black, 0.7)),
     url(../../img/laptop-desk.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
 
   @include respond(phone) {
@@ -42,12 +42,16 @@
 }
 
 .contact {
-  // background-image: linear-gradient(to right bottom, $color-black, $color-black);
   border-radius: 8px;
   box-shadow: 0 1.5rem 4rem rgba($color-white, .2);
 
   &__form {
     width: 100%;
     padding: 8rem;
+
+    @include respond(phone) {
+      padding: 5rem 2rem;
+    }
   }
+
 }
