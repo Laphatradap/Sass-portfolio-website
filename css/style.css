@@ -121,6 +121,15 @@ body {
   letter-spacing: 2px;
   transition: all 2s;
   padding-bottom: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3.7rem; } }
+  @media only screen and (max-width: 75em) {
+    .heading-secondary {
+      font-size: 3.7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3.7rem; } }
   .heading-secondary:hover {
     transform: scale(1.1); }
 
@@ -190,7 +199,7 @@ body {
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  /* xdirection, offset, blur, color */ }
+  /* x direction, offset, blur, color */ }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.5);
     opacity: 0; }
