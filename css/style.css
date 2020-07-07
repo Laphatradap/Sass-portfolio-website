@@ -526,7 +526,7 @@ body {
     align-items: center; }
   .footer__item {
     font-size: 2rem;
-    padding: 2rem;
+    padding: .5rem;
     text-align: center; }
 
 .navigation__checkbox {
@@ -666,7 +666,10 @@ body {
   padding: 10rem 0; }
   @media only screen and (max-width: 75em) {
     .section-about {
-      padding: 10rem 5rem; } }
+      padding: 10rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-about {
+      padding: 0; } }
 
 .section-features {
   padding: 10rem 0;
