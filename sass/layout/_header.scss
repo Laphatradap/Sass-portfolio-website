@@ -18,24 +18,4 @@
     top: 40%;
     text-align: center;
   }
-
-  &__link {
-    padding: 1.5rem;
-
-    &:link,
-    &:visited {
-      color: $color-white;
-      text-decoration: none;
-    }
-
-    &:hover,
-    &:active {
-      color: $color-primary;
-    }
-
-    a:link,
-    a:visited>.fa {
-      color: $color-white;
-    }
-  }
 }

@@ -89,8 +89,7 @@ body {
     font-weight: 400;
     letter-spacing: 1.5rem;
     animation: moveInLeft 1s ease-out;
-    margin-bottom: 1rem;
-    padding: 0 2rem; }
+    margin-bottom: 1rem; }
     @media only screen and (max-width: 75em) {
       .heading-primary--main {
         font-size: 4.5rem; } }
@@ -515,16 +514,6 @@ body {
     transform: translate(-50%, -50%);
     top: 40%;
     text-align: center; }
-  .header__link {
-    padding: 1.5rem; }
-    .header__link:link, .header__link:visited {
-      color: #fff;
-      text-decoration: none; }
-    .header__link:hover, .header__link:active {
-      color: #fcc438; }
-    .header__link a:link,
-    .header__link a:visited > .fa {
-      color: #fff; }
 
 .footer {
   background-color: #212121;
