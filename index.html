@@ -25,21 +25,17 @@
     <nav class="navigation__nav" id="navigation__nav">
       <ul id="menu" class="navigation__list">
         <li class="navigation__item">
-          <a href="#section-about" class="navigation__link">
-            <span>01</span>
-            About Me</a>
+          <a href="#section-about" class="navigation__link">About Me</a>
         </li>
-        <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>My skills</a>
+        <li class="navigation__item"><a href="#section-features" class="navigation__link">My skills</a>
         </li>
-        <li class="navigation__item"><a href="#section-projects" class="navigation__link"><span>03</span>My
-            projects</a>
+        <li class="navigation__item"><a href="#section-projects" class="navigation__link">My projects</a>
         </li>
-        <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>04</span>Contact me</a>
+        <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact me</a>
         </li>
       </ul>
     </nav>
   </div>
-
 
   <header class="header">
     <div class="header__text-box">
@@ -47,6 +43,18 @@
         <span class="heading-primary--main">Laphatrada Phusri</span>
         <span class="heading-primary--sub">Full Stack Web Developer</span>
       </h1>
+      <div class="icon">
+        <div class="icon__link">
+          <a href="https://github.com/laphatradap">
+            <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="icon__link">
+          <a href="https://linkedin.com/in/laphatradap">
+            <i class="fa fa-linkedin-square fa-4x"></i>
+          </a>
+        </div>
+      </div>
       <a href="#section-projects" class="btn btn--colored btn--animated">Check My Projects</a>
     </div>
   </header>
@@ -82,17 +90,9 @@
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <img srcset="img/feature_pic1.jpg 300w, img/feature_pic1.jpg 1000w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
-              class="composition__photo composition__photo--p1" src="img/feature_pic1.jpg">
-
-            <img srcset="img/feature_pic3_small.jpg 300w, img/feature_pic3.jpg 700w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
-              class="composition__photo composition__photo--p2" src="img/feature_pic3.jpg">
-
-            <img srcset="img/feature_pic2_small.jpg 300w, img/feature_pic2.jpg 1000w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
-              class="composition__photo composition__photo--p3" src="img/feature_pic2.jpg">
+            <img srcset="img/lp-with-laptop_small.jpg 300w, img/lp-with-laptop.jpg 1000w"
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Profile photo"
+              class="composition__photo" src="img/lp-with-laptop.jpg">
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
       <div class="row">
         <div class="feature-box">
           <i class="feature-box__icon icon-basic-compass"></i>
-          <h3 class="heading-tertiary u-margin-bottom-small">
+          <h3 class="heading-secondary u-margin-bottom-small">
             My skills
           </h3>
           <div class="feature-box__logo--container">
@@ -164,8 +164,7 @@
               </h4>
               <div class="card__details">
                 <p class="paragraph">
-                  Full stack application for scheduling group meet-ups with
-                  matched availability suggestion
+                  Full stack application for scheduling group meet-ups with matched availability suggestion
                 </p>
               </div>
             </div>
@@ -272,26 +271,23 @@
                   Contact Me
                 </h2>
               </div>
-
               <div class="form__group">
                 <input name="name" type="text" class="form__input" placeholder="Enter your full name" id="name"
                   required>
                 <label for="name" class="form__label">Full name</label>
               </div>
-
               <div class="form__group">
                 <input name="email" type="email" class="form__input" placeholder="Enter your email address" id="email"
                   required>
                 <label for="email" class="form__label">Email address</label>
               </div>
-
               <div class="form__group">
-                <textarea class="form__input" name="message" id="message" placeholder="Your message"></textarea>
+                <textarea class="form__input" name="message" id="message" placeholder="Your message" cols="50"
+                  rows="5"></textarea>
                 <label message="message" class="form__label">Message</label>
               </div>
-
               <div class="form__group">
-                <button class="btn btn--colored" type="submit" value="SEND">Submit</button>
+                <button class="btn btn--colored" type="submit" value="SEND">Send</button>
             </form>
           </div>
         </div>
@@ -301,13 +297,13 @@
 
   <footer class="footer">
     <div class="row">
-      <div class="footer__icon">
-        <div class="footer__link">
+      <div class="icon">
+        <div class="icon__link">
           <a href="https://github.com/laphatradap">
             <i class="fa fa-github fa-4x" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="footer__link">
+        <div class="icon__link">
           <a href="https://linkedin.com/in/laphatradap">
             <i class="fa fa-linkedin-square fa-4x"></i>
           </a>
@@ -316,14 +312,14 @@
 
       <div class="footer__container">
         <div class="footer__item">
-          <span class="heading-tertiary">Location: </span> Amsterdam, the Netherlands
+          <p class="paragraph">Amsterdam, the Netherlands</p>
         </div>
         <div class="footer__item">
-          <span class="heading-tertiary">Phone: </span> +31 (0) 64 432 5254
-        </div>
-        <div class="footer__item">
-          <span class="heading-tertiary">Email: </span>
-          <a class="footer__link" href="mailto:laphatradap@disroot.org">laphatradap@disroot.org</a>
+          <p class="paragraph">
+            <a class="icon__link" href="mailto:laphatradap@disroot.org">
+              laphatradap@disroot.org
+            </a>
+          </p>
         </div>
       </div>
     </div>

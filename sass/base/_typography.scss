@@ -20,6 +20,10 @@ body {
     margin-bottom: 1rem;
     padding: 0 2rem;
 
+    @include respond(tab-land) {
+      font-size: 4.5rem;
+    }
+
   }
 
   &--sub {
@@ -28,6 +32,11 @@ body {
     font-weight: 700;
     letter-spacing: .4rem;
     animation: moveInRight 1s ease-out;
+
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
 
     @include respond(phone) {
       font-size: 2rem;
@@ -39,7 +48,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -49,14 +58,21 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 2s;
+  padding-bottom: 2rem;
 
-  @include respond(tab-port) {
-    font-size: 3.2rem;
-  }
+  // @include respond(tab-port) {
+  //   font-size: 3.7rem;
+  // }
 
-  @include respond(phone) {
-    font-size: 3.5rem;
-  }
+  // @include respond(tab-land) {
+  //   font-size: 3.7rem;
+  // }
+
+  // @include respond(phone) {
+  //   font-size: 3.7rem;
+  // }
+
+
 
   &:hover {
     transform: scale(1.1);
@@ -68,8 +84,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 
+
+  @include respond(tab-land) {
+    font-size: 2.1rem;
+  }
+
   @include respond(phone) {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -79,6 +100,10 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 2rem;
   }
 
   @include respond(phone) {

@@ -1,18 +1,7 @@
 .footer {
   background-color: $color-black-light-1;
-  padding: 10rem 0;
+  padding: 4rem 0;
   color: $color-grey-light-1;
-
-  &__icon {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-
-    // &--item {
-    //   padding: 1.5rem;
-    // }
-  }
 
   &__container {
     display: flex;
@@ -23,40 +12,7 @@
 
   &__item {
     font-size: 2rem;
-    padding: 1.2rem;
+    padding: 2rem;
     text-align: center;
-
-    @include respond(tab-port) {
-      padding: 1rem;
-    }
-
-    &:last-child {
-      font-size: $default-font-size;
-
-      @include respond(tab-port) {
-        padding-top: 3rem;
-        width: 90%;
-      }
-    }
-  }
-
-  &__link {
-    padding: 1.5rem;
-
-    &:link,
-    &:visited {
-      color: $color-white;
-      text-decoration: none;
-    }
-
-    &:hover,
-    &:active {
-      color: inherit;
-    }
-
-    a:link,
-    a:visited>.fa {
-      color: $color-white;
-    }
   }
 }
